@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 17px;
+            margin: 15px 30px;
+            padding: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            padding: 5px 30px 15px 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+        input[type="Text"],input[type="email"],input[type="date"], input[type="password"]{
+            width: 100%;
+            border-radius: 5px;
+            height: 20px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #d4d2d2;
+
+        }
+        textarea{
+            width: 100%;
+            border-radius: 5px;
+            height: 100px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #d4d2d2;
+        }
+        fieldset{
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #d4d2d2;
+        }
+        p select,option{
+            width: 100%;
+            border-radius: 5px;
+            height: 40px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #d4d2d2;
+        }
+        input[type="submit"]{
+            margin: 5px;
+            width: 100%;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: rgb(33, 173, 31);
+        }
+        input[type="submit"]:hover{
+            background-color: darkgreen;
+        }
+        @media screen and (max-width: 600px) and  (orientation: landscape) {
+            body{
+                color : red;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <form action="" class="container">
+        <h1>Payment Form</h1>
+        <hr>
+        <h2>User Information</h2>
+
+        <p>Name: <input type="text" placeholder="Your Name" required></p>
+        <p>
+            <fieldset>
+                <legend>Gender</legend>
+                Male <input type="radio" name="Gender">
+                Female <input type="radio" name="Gender">
+            </fieldset>
+        </p>
+        <p>Address: <textarea name="" id="" cols="30" rows="10"></textarea></p>
+        <p>Email: <input type="email" placeholder="Email"></p>
+        <p>Pincode: <input type="text" placeholder="123456789"></p>
+        <h2>Payment Information</h2>
+
+        <p>card Type: <select name="" id="">
+            <option value="">Select Card Type</option>
+            <option value="">Visa</option>
+            <option value="">Master Card</option>
+            <option value="">Rupay</option>
+            <option value="">America Express</option>
+        </select></p>
+        <p>Card Number: <input type="text" placeholder="1111-2222-3333-4444"></p>
+        <p>Expiration Date: <input type="date"></p>
+        <p>CVV: <input type="password"></p>
+        <input type="submit" value="Pay Now">
+
+
+    </form>
+    
+</body>
+</html>
